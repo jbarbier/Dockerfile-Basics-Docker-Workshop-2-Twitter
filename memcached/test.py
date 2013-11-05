@@ -9,7 +9,7 @@ ip = '127.0.0.1'
 port = 49159
 
 mc = memcache.Client(["{0}:{1}".format(ip, port)], debug=0)
-mc.set("MDM", "Guillaume J. C.")
+mc.set("MDM", "Guillaume J. Charmes")
 value = mc.get("MDM")
 
 print value
